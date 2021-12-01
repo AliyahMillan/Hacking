@@ -114,7 +114,7 @@ There's a 4th query which checks only one bit, so it's not as long. After 7 bits
         END) FROM membres WHERE id=1)
 
 ```
-#Continue Editing here
+# Continue Editing here
 ## Steganomobile: 
 https://www.root-me.org/en/Challenges/Steganography/Steganomobile
 
