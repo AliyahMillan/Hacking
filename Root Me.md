@@ -1,8 +1,22 @@
 # Root Me
-## First challenge:
-```
+## Encodage - ASCII:
+(https://www.root-me.org/fr/Challenges/Cryptanalyse/Encodage-ASCII)
 
-```
+We're provided an associated resource to complete the challenge: ![image](https://user-images.githubusercontent.com/60375020/144291819-ed3343fb-46fc-4b95-b68c-52e6beb55899.png)
+
+Beginning the challenge, we're redirected to (http://challenge01.root-me.org/cryptanalyse/ch8/ch8.txt) and are provided the following string: 4C6520666C6167206465206365206368616C6C656E6765206573743A203261633337363438316165353436636436383964356239313237356433323465.
+
+Now we  just have to use the table provided to decode the string.
+
+<details>
+  <summary> 📣 FLAG SPOILER WARNING 📣 </summary> 
+  
+  This is the solution to the challenge, valued at 10 points. You might have to tweak the final result just a little.... 😉
+  Can't go giving the true flag, now can I?
+ 
+Le flag de ce challenge est: [Really long string]
+</details>
+
 ## Second:
 ```
 
@@ -29,7 +43,7 @@ All I have to do is copy and paste the string of characters into the 'MULTI-TAP 
 ![image](https://user-images.githubusercontent.com/60375020/144178572-d1b3371a-7159-432b-83d9-db4350cd0ba8.png)
 
 <details>
-  <summary>FLAG SPOILER WARNING</summary> 
+  <summary> 📣 FLAG SPOILER WARNING 📣 </summary> 
   
   This is the solution to the challenge, valued at 10 points. You might have to tweak the final result just a little.... 😉
   Can't go giving the true flag, now can I?
