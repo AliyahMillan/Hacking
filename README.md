@@ -9,6 +9,8 @@ https://www.root-me.org/?page=news&lang=en
 https://tryhackme.com/dashboard
 ## HackTheBox
 https://app.hackthebox.com/home
+## HackTheBox Academy
+https://academy.hackthebox.com/login
 ## CryptoHack
 https://www.cryptohack.org/
 ## HackerOne
