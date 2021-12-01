@@ -6,7 +6,10 @@ I apologise in advance to those hoping to read my writeups; I'm busy and a frequ
 ## Root Me
 https://www.root-me.org/?page=news&lang=en
 ## TryHackMe
-
+https://tryhackme.com/dashboard
 ## HackTheBox
-
+https://app.hackthebox.com/home
 ## CryptoHack
+https://www.cryptohack.org/
+## HackerOne
+https://hackerone.com/hacker_dashboard/overview
