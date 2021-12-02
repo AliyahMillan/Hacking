@@ -202,7 +202,7 @@ All I have to do is copy and paste the string of characters into the 'MULTI-TAP 
 ![image](https://user-images.githubusercontent.com/60375020/144179099-6c5c4c75-d8d3-4340-848d-826cdae62c01.png)
 </details>
 
-# Squared
+## Squared
 Starting the challenge, we're given the following image:
 
 ![image](https://user-images.githubusercontent.com/60375020/144519591-0b4c2c05-e772-4890-8f0e-47e6f875c265.png)
