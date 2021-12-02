@@ -128,14 +128,13 @@ Provided access log: http://challenge01.root-me.org/forensic/ch13/ch13.txt
 This is the log of a blind sql injection attack, the attacker executes multiple queries separated by commas. 
 """
 from datetime import datetime
- 
+
 f = open('D:\School Fall 2021\Cyber\RootMe\ch13.txt', 'r')
- 
+
 def get_date(line):
         dateField = line[3]
         date = dateField[1:len(dateField)]
         return datetime.strptime(date, '%d/%b/%Y:%H:%M:%S')
- 
 prev_date = False
 counter = 0
 result = ''
@@ -149,7 +148,7 @@ for line in f:
             delta = (get_date(data) - prev_date).seconds
             counter += 1
  
-            # every 4th request there is last bit checked
+            # Check the last bit every 4th request 
             if counter % 4:
                 if delta == 0:
                     result += '00'
@@ -165,22 +164,17 @@ for line in f:
                 elif delta == 4:
                     result += '1'
                 else:
-                    # no last bit found
+                    # If there's no last bit found
                     pass
-
                 letters.append(result)
                 result = ''
-
         prev_date = get_date(data)
-
 f.close()
- 
 pwd = ''
 for letter in letters:
     pwd += chr(int(letter, 2))
- 
 print(pwd)
-
+#Flag is printed.
 ```
 ## Steganomobile: 
 https://www.root-me.org/en/Challenges/Steganography/Steganomobile
