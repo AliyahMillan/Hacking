@@ -1,4 +1,7 @@
 # Root Me
+**DISCLAIMER**: Challenges will be in either French or English. I'd like to be able to practice French, especially in the infosec/cybersec field.
+There's always Google Translate.
+
 ## Encodage - ASCII:
 https://www.root-me.org/fr/Challenges/Cryptanalyse/Encodage-ASCII
 
