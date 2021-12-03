@@ -1,14 +1,18 @@
 # Root Me
+______________________________________________________________________________
+
 **DISCLAIMER**: Challenges will be in either French or English. I'd like to be able to practice French, especially in the infosec/cybersec field.
 
 There's always Google Translate, but I might translate portions anyway.
 
-## Encodage - ASCII:
+## Cryptanalyse
+### Encodage - ASCII:
 https://www.root-me.org/fr/Challenges/Cryptanalyse/Encodage-ASCII
 
 We're provided an associated resource to complete the challenge: ![image](https://user-images.githubusercontent.com/60375020/144296644-fdb7ac8c-6eea-481b-b202-cea9ce7c03f2.png)
 
-Beginning the challenge, we're redirected to http://challenge01.root-me.org/cryptanalyse/ch8/ch8.txt and are provided the following string: 4C6520666C6167206465206365206368616C6C656E6765206573743A203261633337363438316165353436636436383964356239313237356433323465.
+Beginning the challenge, we're redirected to http://challenge01.root-me.org/cryptanalyse/ch8/ch8.txt and are provided the following string: 
+> 4C6520666C6167206465206365206368616C6C656E6765206573743A203261633337363438316165353436636436383964356239313237356433323465
 
 Now we  just have to use the table provided to decode the string.
 
@@ -21,7 +25,8 @@ Now we  just have to use the table provided to decode the string.
 Le flag de ce challenge est: [Really long string]
 </details>
 
-## Encodage - UU:
+### Encodage - UU:
+-------------------------------------------------------------------------------------------------------------
 https://www.root-me.org/fr/Challenges/Cryptanalyse/Encodage-UU
 
 We're provided a PDF titled 'EN - Encodings format.pdf': https://repository.root-me.org/Cryptographie/EN%20-%20Encodings%20format.pdf?_gl=1*bhowco*_ga*Mzg3ODQ3ODc2LjE2MzgyNDAxMDg.*_ga_SRYSKX09J7*MTYzODM3ODQyOC45LjEuMTYzODM4NDM4Ny4w. 
@@ -49,9 +54,11 @@ Very simple ;)
 PASS = [This should be the password] 
 ```
 
-</details>
+</details> 
 
-## Analyse de logs - attaque web:
+## Forensic
+### Analyse de logs - attaque web:
+-------------------------------------------------------------------------------------------------------------
 https://www.root-me.org/fr/Challenges/Forensic/Analyse-de-logs-attaque-web
 We're given the following hint: 'Énoncé - Notre site web semble avoir été attaqué, mais notre administrateur système ne comprend pas les logs du serveur web. Pouvez-vous retrouver les données qui ont été exfiltrées?'
 <details>
@@ -180,7 +187,9 @@ for letter in letters:
 print(pwd)
 #Flag is printed.
 ```
-## Steganomobile: 
+## Steganography/Steganographie
+### Steganomobile: 
+-------------------------------------------------------------------------------------------------------------
 https://www.root-me.org/en/Challenges/Steganography/Steganomobile
 
 Before beginning the challenge, we're given a hint: 'After extraction of mobile data, the searcher, investigator have get this sequence of numbers. Maybe a phone number?'
@@ -206,7 +215,8 @@ All I have to do is copy and paste the string of characters into the 'MULTI-TAP 
 ![image](https://user-images.githubusercontent.com/60375020/144179099-6c5c4c75-d8d3-4340-848d-826cdae62c01.png)
 </details>
 
-## Squared
+### Squared
+-------------------------------------------------------------------------------------------------------------
 Starting the challenge, we're given the following image:
 
 ![image](https://user-images.githubusercontent.com/60375020/144519591-0b4c2c05-e772-4890-8f0e-47e6f875c265.png)
