@@ -5,7 +5,7 @@ ______________________________________________________________________________
 
 There's always Google Translate, but I might translate portions anyway.
 
-## Cryptanalyse
+## 🔒 Cryptanalysis/Cryptanalyse 🔒
 ### Encodage - ASCII:
 https://www.root-me.org/fr/Challenges/Cryptanalyse/Encodage-ASCII
 
@@ -56,7 +56,7 @@ PASS = [This should be the password]
 
 </details> 
 
-## Forensic
+## 🔬 Forensic 🔬
 ### Analyse de logs - attaque web:
 -------------------------------------------------------------------------------------------------------------
 https://www.root-me.org/fr/Challenges/Forensic/Analyse-de-logs-attaque-web
@@ -187,7 +187,7 @@ for letter in letters:
 print(pwd)
 #Flag is printed.
 ```
-## Steganography/Steganographie
+## 🔍 Steganography/Steganographie 🔍
 ### Steganomobile: 
 -------------------------------------------------------------------------------------------------------------
 https://www.root-me.org/en/Challenges/Steganography/Steganomobile
@@ -236,4 +236,7 @@ So we find the flag at the end of file:
   ![image](https://user-images.githubusercontent.com/60375020/144519804-cdf42ec0-f450-42e2-a4ef-fc7c02d0e92a.png)
 </details>
 
-
+## :atom: Programming :atom:
+## ✒️ App - Script ✒️
+## 💯 App - System 💯
+## Cracking
