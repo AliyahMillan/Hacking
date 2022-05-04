@@ -45,7 +45,7 @@ I cat the file:
   This is a password. You might have to tweak the final result just a little.... 😉
   Can't go giving the true flag, now can I?
  
-![image](https://github.com/AliyahMillan/Hacking/files/8617771/cat.enter.txt)
+![image](https://user-images.githubusercontent.com/60375020/166621128-f03132ee-1ba9-4f17-a4dd-966aa0d9e849.JPG)
 </details>
 
 
