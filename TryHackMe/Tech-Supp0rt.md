@@ -52,7 +52,12 @@ I cat the file:
 This is obviously quite valuable, because these are credentials. These will come  in handy. It mentions a '/subrion', so I'll go and check that out on the website.  
 <p align="center"><img src="https://user-images.githubusercontent.com/60375020/166621299-649aa2b7-fea8-4d98-85a6-3187976283b3.png"></p>
 
+Interesting; no matter what I do, it says the page is "Unable to connect". It doesn't seem to respond.  
 
+This is where I use another tool: BurpSuite. 
 
+> If you're new to BurpSuite, I recommend going to the BurpSuite Academy, visiting: https://portswigger.net/burp/documentation/desktop/getting-started?utm_source=burp_suite_community&utm_medium=learn_tab&utm_campaign=onboarding, or trying the TryHackMe BurpSuite Room.  
+
+BurpSuite is used for web applications. This is another tool you don't have to worry about downloading or installing because Kali Linux gives it to you by default.
 
 
