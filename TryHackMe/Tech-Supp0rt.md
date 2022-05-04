@@ -50,3 +50,9 @@ I cat the file:
 
 
 This is obviously quite valuable, because these are credentials. These will come  in handy. It mentions a '/subrion', so I'll go and check that out on the website.  
+<p align="center"><img src="https://user-images.githubusercontent.com/60375020/166621299-649aa2b7-fea8-4d98-85a6-3187976283b3.png"></p>
+
+
+
+
+
