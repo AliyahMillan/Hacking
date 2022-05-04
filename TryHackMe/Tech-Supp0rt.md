@@ -39,3 +39,5 @@ Because we were able to do this, it means we have access to websvr, and can proc
 To do this, we're going to use the "get" command. This will download the file and save it for us, in my case, in the /home/kali/ directory on my Kali Linux machine. 
 
 I cat the file:  
+<p align="center"><img src="https://github.com/AliyahMillan/Hacking/files/8617771/cat.enter.txt"></p>
+
