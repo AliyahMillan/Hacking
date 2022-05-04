@@ -28,3 +28,11 @@ As it showed up in the nmap scan, we can see it opens on the Ubuntu Default Page
   <img src="https://user-images.githubusercontent.com/60375020/166619250-ffe50728-232b-4c40-b3ac-690067359ce1.png">
   <img src="https://user-images.githubusercontent.com/60375020/166619311-39b37a6a-7ea6-4448-a03e-fb5e3ea599eb.png">
 </p>
+
+This doesn't give us anything. This means I'll investigate the SMB shares that we saw mentioned in the nmap scan (ports 139 and 445).  
+
+The tool I'll be using to investigate the SMB shares is called smbclient, and you don't have to worry about installing or getting the tool if you're using Kali Linux (because it comes installed by default). Using the tool is simple, all you do is follow this syntax: 
+
+                                              smbclient –L  \\\\IP_Address_Goes_Here\\
+
+without the underscores, and with your given IP Address where stated. 
