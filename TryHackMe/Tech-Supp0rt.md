@@ -23,3 +23,8 @@ Starting with the website, I navigate to it using the command: ```firefox http:/
 If you'd prefer, you could just enter http://10.10.17/98 in the browser of your choice. 
 
 As it showed up in the nmap scan, we can see it opens on the Ubuntu Default Page: 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60375020/166619250-ffe50728-232b-4c40-b3ac-690067359ce1.png">
+  <img src="https://user-images.githubusercontent.com/60375020/166619311-39b37a6a-7ea6-4448-a03e-fb5e3ea599eb.png">
+</p>
