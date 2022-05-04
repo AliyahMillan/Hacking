@@ -32,3 +32,10 @@ When entering in your command, it will prompt you for a password. You can leave 
 Looking at the results of our command, we can see that the following sharenames are present: print$, websvr, and IPC$. print$ and IPC$ are common sharenames, so this is probably something you won't want to spent time on  looking into. You're going to be more interested in uncommon and unique sharenames. So I'll be looking more closely into websvr.  
 
 The way I'm going to look into it is by continuing to use smbclient, with the command: ```smbclient  \\\\IP_Address_Goes_Here\\where_you_want_to_look```, where "where_you_want_to_look" is the name of the sharefile you want to inspect. 
+
+<p align="center"><img src="https://user-images.githubusercontent.com/60375020/166620556-901b6e00-c5ad-4030-9965-739bf7264cf9.png"></p>
+Because we were able to do this, it means we have access to websvr, and can proceed to download and view the file we found in websvr (enter.txt). 
+
+To do this, we're going to use the "get" command. This will download the file and save it for us, in my case, in the /home/kali/ directory on my Kali Linux machine. 
+
+I cat the file:  
