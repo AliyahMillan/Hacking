@@ -1,14 +1,10 @@
 # Tech_Supp0rt: 1
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/60375020/164568509-7ebe3105-7af2-4301-94ae-e7cd6840d93d.png">
-</p>
+<p align="center"><img src="https://user-images.githubusercontent.com/60375020/164568509-7ebe3105-7af2-4301-94ae-e7cd6840d93d.png"></p>
 
 ## Enumeration
 I begin by starting the machine and doing an nmap scan: ```nmap -sC -sV -Pn 10.10.17.98```
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/60375020/164568833-b9293896-5045-4cdf-92d0-3a828c7c8efd.png">
-</p>
+<p align="center"><img src="https://user-images.githubusercontent.com/60375020/164568833-b9293896-5045-4cdf-92d0-3a828c7c8efd.png"></p>
 
 From the nmap scan, we can see that there are four open ports: 22, 80, 139, and 445.
 
@@ -24,10 +20,7 @@ If you'd prefer, you could just enter http://10.10.17/98 in the browser of your 
 
 As it showed up in the nmap scan, we can see it opens on the Ubuntu Default Page: 
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/60375020/166619250-ffe50728-232b-4c40-b3ac-690067359ce1.png">
-  <img src="https://user-images.githubusercontent.com/60375020/166619311-39b37a6a-7ea6-4448-a03e-fb5e3ea599eb.png">
-</p>
+<p align="center"><img src="https://user-images.githubusercontent.com/60375020/166619250-ffe50728-232b-4c40-b3ac-690067359ce1.png"><img src="https://user-images.githubusercontent.com/60375020/166619311-39b37a6a-7ea6-4448-a03e-fb5e3ea599eb.png"></p>
 
 This doesn't give us anything. This means I'll investigate the SMB shares that we saw mentioned in the nmap scan (ports 139 and 445).  
 
@@ -36,3 +29,4 @@ The tool I'll be using to investigate the SMB shares is called smbclient, and yo
                                               smbclient –L  \\\\IP_Address_Goes_Here\\
 
 without the underscores, and with your given IP Address where stated. 
+<p align="center"><img src="https://user-images.githubusercontent.com/60375020/166620233-ce1432c1-d2de-4664-bfec-64d818ffbdeb.png"></p>
