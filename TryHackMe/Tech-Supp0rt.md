@@ -40,4 +40,7 @@ To do this, we're going to use the "get" command. This will download the file an
 
 I cat the file:  
 <p align="center"><img src="https://github.com/AliyahMillan/Hacking/files/8617771/cat.enter.txt"></p>
+SPOILER HERE
 
+This is obviously quite valuable, because these are credentials. These will come  in handy. 
+It mentions a '/subrion', so I'll go and check that out on the website.  
