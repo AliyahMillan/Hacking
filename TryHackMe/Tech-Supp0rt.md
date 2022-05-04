@@ -37,9 +37,16 @@ The way I'm going to look into it is by continuing to use smbclient, with the co
 Because we were able to do this, it means we have access to websvr, and can proceed to download and view the file we found in websvr (enter.txt). 
 
 To do this, we're going to use the "get" command. This will download the file and save it for us, in my case, in the /home/kali/ directory on my Kali Linux machine. 
-
 I cat the file:  
-<p align="center"><img src="https://github.com/AliyahMillan/Hacking/files/8617771/cat.enter.txt"></p>
-SPOILER HERE
+
+<details>
+  <summary> 📣 FLAG SPOILER WARNING 📣 </summary> 
+  
+  This is a password. You might have to tweak the final result just a little.... 😉
+  Can't go giving the true flag, now can I?
+ 
+![image](https://github.com/AliyahMillan/Hacking/files/8617771/cat.enter.txt)
+</details>
+
 
 This is obviously quite valuable, because these are credentials. These will come  in handy. It mentions a '/subrion', so I'll go and check that out on the website.  
