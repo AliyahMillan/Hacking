@@ -16,7 +16,7 @@ Port 80 manages http requests on a web server and is running on Ubuntu. We can s
 
 After a quick Google search, I found that SMB (Samba share) used to run on port 139 to communicate with NetBIOS (for file and print sharing over Windows. Originally created in the 1980s, it's actually still used on a number of networks today). Newer versions of SMB run on port 445.
 
-Starting with the website, I navigate to it using the command: ```firefox http://IP_ADDRESS```
+Starting with the website (because it has a greater attack surface), I navigate to it using the command: ```firefox http://IP_ADDRESS```
 
 If you'd prefer, you could just enter ___http://IP_ADDRESS___ in the browser of your choice. 
 
