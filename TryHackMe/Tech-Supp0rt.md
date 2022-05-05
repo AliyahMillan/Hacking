@@ -69,7 +69,7 @@ I cat the file:
 -->
 
 <details>
-  <summary align="center"> 📣 FLAG SPOILER WARNING 📣 </summary>
+  <summary align="center"> 📣📣📣📣 FLAG SPOILER WARNING 📣📣📣📣 </summary>
  
   > This is a password. You might have to tweak the final result just a little.... 😉
   Can't go giving the true flag, now can I?
