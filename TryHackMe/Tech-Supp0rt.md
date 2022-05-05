@@ -24,14 +24,30 @@ As it showed up in the nmap scan, we can see it opens on the Ubuntu Default Page
 
 This doesn't give us anything. This means I'll investigate the SMB shares that we saw mentioned in the nmap scan (ports 139 and 445).  
 
-The tool I'll be using to investigate the SMB shares is called smbclient, and you don't have to worry about installing or getting the tool if you're using Kali Linux (because it comes installed by default). Using the tool is simple, all you do is follow this syntax: ```smbclient –L  \\\\IP_Address_Goes_Here\\```, without the underscores, and with your given IP Address where stated.
+The tool I'll be using to investigate the SMB shares is called smbclient, and you don't have to worry about installing or getting the tool if you're using Kali Linux (because it comes installed by default). Using the tool is simple, all you do is follow this syntax: 
+
+<h5 align="center">
+  
+  ```smbclient –L  \\\\IP_Address_Goes_Here\\```
+  
+</h5>
+
+without the underscores, and with your given IP Address where stated.
 <p align="center"><img src="https://user-images.githubusercontent.com/60375020/166620233-ce1432c1-d2de-4664-bfec-64d818ffbdeb.png"></p>
 
 When entering in your command, it will prompt you for a password. You can leave it blank and just hit your "Enter" key.  
 
 Looking at the results of our command, we can see that the following sharenames are present: print$, websvr, and IPC$. print$ and IPC$ are common sharenames, so this is probably something you won't want to spent time on  looking into. You're going to be more interested in uncommon and unique sharenames. So I'll be looking more closely into websvr.  
 
-The way I'm going to look into it is by continuing to use smbclient, with the command: ```smbclient  \\\\IP_Address_Goes_Here\\where_you_want_to_look```, where "where_you_want_to_look" is the name of the sharefile you want to inspect. 
+The way I'm going to look into it is by continuing to use smbclient, with the command: 
+
+<h5 align="center">
+  
+  ```smbclient  \\\\IP_Address_Goes_Here\\where_you_want_to_look```
+  
+</h5>
+
+where "where_you_want_to_look" is the name of the sharefile you want to inspect. 
 
 <p align="center"><img src="https://user-images.githubusercontent.com/60375020/166620556-901b6e00-c5ad-4030-9965-739bf7264cf9.png"></p>
 Because we were able to do this, it means we have access to websvr, and can proceed to download and view the file we found in websvr (enter.txt). 
