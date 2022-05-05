@@ -22,7 +22,7 @@ If you'd prefer, you could just enter ___http://IP_ADDRESS___ in the browser of 
 
 As it showed up in the nmap scan, we can see it opens on the Ubuntu Default Page: 
 
-<p align="center"><img src="https://user-images.githubusercontent.com/60375020/166619250-ffe50728-232b-4c40-b3ac-690067359ce1.png"><img src="https://user-images.githubusercontent.com/60375020/166619311-39b37a6a-7ea6-4448-a03e-fb5e3ea599eb.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/60375020/166619250-ffe50728-232b-4c40-b3ac-690067359ce1.png">
 
 This doesn't give us anything. This means I'll investigate the SMB shares that we saw mentioned in the nmap scan (ports 139 and 445).  
 
