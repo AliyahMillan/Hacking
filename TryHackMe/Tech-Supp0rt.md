@@ -2,7 +2,7 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/60375020/164568509-7ebe3105-7af2-4301-94ae-e7cd6840d93d.png"></p>
 
 ## Enumeration
-I begin by starting the machine and doing an nmap scan: ```nmap -sC -sV -Pn 10.10.17.98```
+I begin by starting the machine and doing an nmap scan: ```nmap -sC -sV -Pn IP_ADDRESS```
 
 <p align="center"><img src="https://user-images.githubusercontent.com/60375020/164568833-b9293896-5045-4cdf-92d0-3a828c7c8efd.png"></p>
 
@@ -14,9 +14,9 @@ Port 80 manages http requests on a web server and is running on Ubuntu. We can s
 
 After a quick Google search, I found that SMB (Samba share) used to run on port 139 to communicate with NetBIOS (for file and print sharing over Windows. Originally created in the 1980s, it's actually still used on a number of networks today). Newer versions of SMB run on port 445.
 
-Starting with the website, I navigate to it using the command: ```firefox http://10.10.17/98```
+Starting with the website, I navigate to it using the command: ```firefox http://IP_ADDRESS/98```
 
-If you'd prefer, you could just enter http://10.10.17/98 in the browser of your choice. 
+If you'd prefer, you could just enter http://IP_ADDRESS/98 in the browser of your choice. 
 
 As it showed up in the nmap scan, we can see it opens on the Ubuntu Default Page: 
 
@@ -28,7 +28,7 @@ The tool I'll be using to investigate the SMB shares is called smbclient, and yo
 
 <h5 align="center">
   
-  ```smbclient –L  \\\\IP_Address_Goes_Here\\```
+  ```smbclient –L  \\\\IP_ADDRESS_GOES_HERE\\```
   
 </h5>
 
@@ -43,11 +43,11 @@ The way I'm going to look into it is by continuing to use smbclient, with the co
 
 <h5 align="center">
   
-  ```smbclient  \\\\IP_Address_Goes_Here\\where_you_want_to_look```
+  ```smbclient  \\\\IP_ADDRESS_GOES_HERE\\WHERE_YOU_WANT_TO_LOOK```
   
 </h5>
 
-where "where_you_want_to_look" is the name of the sharefile you want to inspect. 
+where "WHERE_YOU_WANT_TO_LOOK" is the name of the sharefile you want to inspect. 
 
 <p align="center"><img src="https://user-images.githubusercontent.com/60375020/166620556-901b6e00-c5ad-4030-9965-739bf7264cf9.png"></p>
 Because we were able to do this, it means we have access to websvr, and can proceed to download and view the file we found in websvr (enter.txt). 
@@ -75,5 +75,4 @@ This is where I use another tool: BurpSuite.
 > If you're new to BurpSuite, I recommend going to the BurpSuite Academy, visiting: https://portswigger.net/burp/documentation/desktop/getting-started?utm_source=burp_suite_community&utm_medium=learn_tab&utm_campaign=onboarding, or trying the TryHackMe BurpSuite Room.  
 
 BurpSuite is used for web applications. This is another tool you don't have to worry about downloading or installing because Kali Linux gives it to you by default.
-
 
