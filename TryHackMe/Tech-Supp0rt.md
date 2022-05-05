@@ -66,8 +66,9 @@ I cat the file:
 ![image](https://user-images.githubusercontent.com/60375020/166621128-f03132ee-1ba9-4f17-a4dd-966aa0d9e849.JPG)
 </details>
 
+This is obviously quite valuable, because these are credentials. These will come  in handy. I enter the credentials in this super cool site I use to cheat 🤫, [CyberChef](https://gchq.github.io/CyberChef/), and it gives me the actual password for the admin account.
 
-This is obviously quite valuable, because these are credentials. These will come  in handy. It mentions a '/subrion', so I'll go and check that out on the website.  
+It mentions a '/subrion', so I'll go and check that out on the website.  
 <p align="center"><img src="https://user-images.githubusercontent.com/60375020/166621299-649aa2b7-fea8-4d98-85a6-3187976283b3.png"></p>
 
 Interesting; no matter what I do, it says the page is "Unable to connect". It doesn't seem to respond.  
