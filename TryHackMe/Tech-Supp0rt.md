@@ -74,7 +74,7 @@ Interesting; no matter what I do, it says the page is "Unable to connect". It do
 
 This is where I use another tool: BurpSuite. 
 
-> If you're new to BurpSuite, I recommend going to the BurpSuite Academy, visiting: https://portswigger.net/burp/documentation/desktop/getting-started?utm_source=burp_suite_community&utm_medium=learn_tab&utm_campaign=onboarding, or trying the TryHackMe BurpSuite Room.  
+> If you're new to BurpSuite, I recommend going to [BurpSuite (PortSwigger) Academy](https://portswigger.net/burp/documentation/desktop/getting-started?utm_source=burp_suite_community&utm_medium=learn_tab&utm_campaign=onboarding), or trying the [TryHackMe Burp Suite Module](https://tryhackme.com/module/learn-burp-suite).  
 
 BurpSuite is used for web applications. This is another tool you don't have to worry about downloading or installing because Kali Linux gives it to you by default.
 
