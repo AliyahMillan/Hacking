@@ -56,10 +56,10 @@ Because we were able to do this, it means we have access to websvr, and can proc
 
 To do this, we're going to use the "get" command. This will download the file and save it for us, in my case, in the /home/kali/ directory on my Kali Linux machine. 
 I cat the file:  
-
+<h3>
 <details>
-  <summary> 📣 FLAG SPOILER WARNING 📣 </summary> 
-  
+  <summary> 📣 FLAG SPOILER WARNING 📣 </summary>
+  </h3>
   This is a password. You might have to tweak the final result just a little.... 😉
   Can't go giving the true flag, now can I?
  
