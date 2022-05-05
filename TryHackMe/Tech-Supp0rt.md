@@ -57,6 +57,7 @@ Because we were able to do this, it means we have access to websvr, and can proc
 To do this, we're going to use the "get" command. This will download the file and save it for us, in my case, in the /home/kali/ directory on my Kali Linux machine. 
 I cat the file:  
 
+<!--           ORIGINAL CODE
 <details>
   <summary> 📣 FLAG SPOILER WARNING 📣 </summary>
   
@@ -65,12 +66,22 @@ I cat the file:
  
 ![image](https://user-images.githubusercontent.com/60375020/166621128-f03132ee-1ba9-4f17-a4dd-966aa0d9e849.JPG)
 </details>
+-->
+
+<details>
+  <summary align="center"> 📣 FLAG SPOILER WARNING 📣 </summary>
+ 
+  > This is a password. You might have to tweak the final result just a little.... 😉
+  Can't go giving the true flag, now can I?
+
+![image](https://user-images.githubusercontent.com/60375020/166621128-f03132ee-1ba9-4f17-a4dd-966aa0d9e849.JPG)
+</details>
 
 This is obviously quite valuable, because these are credentials. These will come  in handy. I enter the credentials in this super cool site I use to cheat 🤫, [CyberChef](https://gchq.github.io/CyberChef/), and it gives me the actual password for the admin account.
 
 It mentions a /subrion/panel in the .txt file,  so I'll go and check that out on the website.
 
-<!--
+<!--                   ORIGINAL CODE
 It mentions a '/subrion', so I'll go and check that out on the website.  
 <p align="center"><img src="https://user-images.githubusercontent.com/60375020/166621299-649aa2b7-fea8-4d98-85a6-3187976283b3.png"></p>
 
