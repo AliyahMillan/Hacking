@@ -68,6 +68,9 @@ I cat the file:
 
 This is obviously quite valuable, because these are credentials. These will come  in handy. I enter the credentials in this super cool site I use to cheat 🤫, [CyberChef](https://gchq.github.io/CyberChef/), and it gives me the actual password for the admin account.
 
+It mentions a /subrion/panel in the .txt file,  so I'll go and check that out on the website.
+
+<!--
 It mentions a '/subrion', so I'll go and check that out on the website.  
 <p align="center"><img src="https://user-images.githubusercontent.com/60375020/166621299-649aa2b7-fea8-4d98-85a6-3187976283b3.png"></p>
 
@@ -78,4 +81,4 @@ This is where I use another tool: BurpSuite.
 > If you're new to BurpSuite, I recommend going to [BurpSuite (PortSwigger) Academy](https://portswigger.net/burp/documentation/desktop/getting-started?utm_source=burp_suite_community&utm_medium=learn_tab&utm_campaign=onboarding), or trying the [TryHackMe Burp Suite Module](https://tryhackme.com/module/learn-burp-suite).  
 
 BurpSuite is used for web applications. This is another tool you don't have to worry about downloading or installing because Kali Linux gives it to you by default.
-
+-->
