@@ -18,7 +18,7 @@ After a quick Google search, I found that SMB (Samba share) used to run on port 
 
 Starting with the website, I navigate to it using the command: ```firefox http://IP_ADDRESS```
 
-If you'd prefer, you could just enter http://IP_ADDRESS in the browser of your choice. 
+If you'd prefer, you could just enter ___http://IP_ADDRESS___ in the browser of your choice. 
 
 As it showed up in the nmap scan, we can see it opens on the Ubuntu Default Page: 
 
